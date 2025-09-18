@@ -24,11 +24,11 @@ Third, the training and validation of the performance of 7 different ML algorith
 
 • Algorithm 4: **GradientBoostingClassifier**.
 
-• Algorithm 4: **XGBClassifier (XGBoost library)**.
+• Algorithm 5: **XGBClassifier (XGBoost library)**.
 
-• Algorithm 4: **LGBMClassifier (LightGBM library)**.
+• Algorithm 6: **LGBMClassifier (LightGBM library)**.
 
-• Algorithm 4: **CatBoostClassifier (CatBoost library)**.
+• Algorithm 7: **CatBoostClassifier (CatBoost library)**.
 
 Finally, the best algorithim is selected for this particular dataset to make predictions in production.
 
