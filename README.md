@@ -14,21 +14,33 @@ c. Converting categorical variables into binary ones.
 
 d. Scaling the data.
 
-Third, the training and validation of the performance of 4 different ML algorithms are compared to solve the binary classification problem. The ML models are:
+Third, the training and validation of the performance of 7 different ML algorithms are compared to solve the binary classification problem. The ML models are:
 
-• Algorithm 1: **Logistic Regression**.
+• Algorithm 1: **LogisticRegression**.
 
-• Algorithm 2: **Decision Tree Classifier**.
+• Algorithm 2: **DecisionTreeClassifier**.
 
-• Algorithm 3: **Random Forest Classifier**.
+• Algorithm 3: **RandomForestClassifier**.
 
-• Algorithm 4: **Gradient Boosting Classifier**.
+• Algorithm 4: **GradientBoostingClassifier**.
 
-Finally, the best algorithim is selected for this particular dataset.
+• Algorithm 4: **XGBClassifier (XGBoost library)**.
 
-🛠️**Libraries used**: Pandas, Matplotlib, Seaborn, NumPy, SciPy, Scikit-learn.
+• Algorithm 4: **LGBMClassifier (LightGBM library)**.
 
-The Jupyter Notebook is in scripts/binary_classifier.ipynb.
+• Algorithm 4: **CatBoostClassifier (CatBoost library)**.
+
+Finally, the best algorithim is selected for this particular dataset to make predictions in production.
+
+🛠️**Libraries used**: Pandas, Matplotlib, Seaborn, NumPy, SciPy, Scikit-learn, XGBoost, LightGBM, CatBoost.
+
+- In folder "notebooks" is the Jupyter Notebook "binary_classifier.ipynb".
+
+- In folder "data/raw" is the raw dataset.
+
+- In folder "data/processed" is the processed data.
+
+- In folder "models" are the scaler and the trained model.
 
 ## 🚀 Installation
 1. Clone this repository:
@@ -37,8 +49,6 @@ git clone https://github.com/arteaga7/ML-Binary-Classifier.git
 ```
 2. Set virtual environment and install dependencies:
 ```
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
+python3 -m venv env && source env/bin/activate && pip3 install -r requirements.txt
 ```
-3. Run Jupyter Notebook in scripts/binary_classifier.ipynb.
+3. Run Jupyter Notebook in notebooks/binary_classifier.ipynb.
